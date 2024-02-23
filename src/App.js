@@ -4,6 +4,7 @@ import DebounceThrottle from './debounceThrottle'
 import explorData from './FileExplorer/data/folderData';
 import Folder from './FileExplorer/components/folder'
 import useTraverseTree from './FileExplorer/hooks/useTraverseTree';
+import Pagination from './Pagination/Pagination';
 function App() {
 
   /** ---------- This part is for File explorer practice --------------**/
@@ -24,9 +25,10 @@ function App() {
       */}
 
       {/* ------------- This for file explorer practice ------------ */}
-            
-      <Folder explorerData={explorerData} handleAddFolderOrFile={handleAddFolderOrFile}/>
+      {/* <Folder explorerData={explorerData} handleAddFolderOrFile={handleAddFolderOrFile}/> */}
        
+       {/* ------------- This for file Pagination practice ------------ */}
+      <Pagination/>
     </div>
   )
 }
